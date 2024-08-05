@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Voting System</title>
+    <link rel="stylesheet" href="stylesi.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Online Voting System</h1>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#login">Login</a></li>
+                <li><a href="#vote">Vote</a></li>
+                <li><a href="#results">Results</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h2>Welcome to the Online Voting System</h2>
+        <p>Securely cast your vote for various elections and polls.</p>
+    </section>
+
+    <section id="login">
+        <h2>Login</h2>
+        <form id="loginForm">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <button type="submit">Login</button>
+        </form>
+    </section>
+
+    <section id="vote">
+        <h2>Vote</h2>
+        <form id="voteForm">
+            <p>Please select your candidate:</p>
+            <input type="radio" id="candidate1" name="candidate" value="Candidate 1" required>
+            <label for="candidate1">Candidate 1</label><br>
+            <input type="radio" id="candidate2" name="candidate" value="Candidate 2" required>
+            <label for="candidate2">Candidate 2</label><br>
+            <button type="submit">Submit Vote</button>
+        </form>
+    </section>
+
+    <section id="results">
+        <h2>Results</h2>
+        <p>Candidate 1: <span id="candidate1Votes">0</span> votes</p>
+        <p>Candidate 2: <span id="candidate2Votes">0</span> votes</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Online Voting System. All rights reserved.</p>
+    </footer>
+
+    <script src="scriptsi.js"></script>
+</body>
+</html>
